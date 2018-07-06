@@ -12,6 +12,7 @@
     "react-native": "0.55.3",
     "react-native-popover-tooltip": "^1.1.4",
     "react-native-remote-svg": "^1.2.0",
+    "react-native-snap-carousel": "^3.7.2",
     "react-native-tabbar-bottom": "^1.0.4",
     "react-native-tooltip": "^5.2.0",
     "react-native-vector-icons": "^4.6.0",

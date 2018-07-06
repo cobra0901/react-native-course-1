@@ -8,6 +8,7 @@ import PlusScreen from './activities/ImageHouse/plus';
 import Download from './activities/ImageHouse/download';
 import Outlet from './activities/ImageHouse/outlet';
 import Blur from './activities/ImageHouse/blur';
+import Screen from './activities/ImageHouse/Screen';
 
 export default class App extends React.Component {
 
@@ -21,7 +22,8 @@ export default class App extends React.Component {
                     {/* <PlusScreen/>         */}
                     {/* <Download />      */}
                     {/* <Outlet />                     */}
-                    <Blur />                    
+                    {/*<Blur />                    */}
+                    <Screen/>
 
                 </View>
             {/* <TouchableOpacity 
