@@ -40,7 +40,6 @@ export default StyleSheet.create({
     imageContainer: {
         flex: 1,
         marginBottom: IS_IOS ? 0 : -1, // Prevent a random Android rendering issue
-        backgroundColor: 'white',
         borderTopLeftRadius: entryBorderRadius,
         borderTopRightRadius: entryBorderRadius
     },
@@ -66,8 +65,9 @@ export default StyleSheet.create({
     textContainer: {
         justifyContent: 'center',
         paddingTop: 5 - entryBorderRadius,
-        paddingHorizontal: 10,
         backgroundColor: 'grey',
+        paddingTop:10,
+        alignItems:'center',
         opacity:0.6,
         borderBottomLeftRadius: entryBorderRadius,
         borderBottomRightRadius: entryBorderRadius

@@ -35,6 +35,8 @@ export default class BackgroundImage extends Component {
                 <Image source={require('../game2.png')}
                        style={styles.logo}/>
 
+                <Text style={styles.my}>我的電影</Text>
+
                 <SwitchButton
                     onValueChange={(val) => this.setState({activeSwitch: val})}
                     text1='CN'
@@ -45,19 +47,32 @@ export default class BackgroundImage extends Component {
                     switchBorderRadius={100}
                     switchSpeedChange={500}
                     switchBorderColor='#d4d4d4'
-                    switchBackgroundColor='#709BB2'
+                    switchBackgroundColor='#004ABB'
                     btnBorderColor='#fff'
                     btnBackgroundColor='#fff'
                     fontColor='#fff'
                     activeFontColor='#111'
                 />
 
-
                 {this.state.activeSwitch === 1 ? console.log('view1') : console.log('view2')}
                 <ScrollView>
-                    <Carouse2/>
 
-                    <Carousel/>
+                    <View style={{backgroundColor:'#fff',justifyContent:'center',alignItems:'center'}}>
+
+                        <View style={{flexDirection:'row',justifyContent:'center'}}>
+                            <Text style={styles.arrow}>Hong Kong</Text>
+                            <Image source={require('../airplane.png')} style={styles.airplane}/>
+                            <Text style={styles.arrow}>New York</Text>
+                        </View>
+
+                        <Text style={{color:'#111',fontSize:22,fontFamily:'notoserif',marginBottom:16,marginTop:5}}>Best Movie Notifications</Text>
+                    </View>
+                        <Carouse2/>
+
+                    <View style={{backgroundColor:'#fff',justifyContent:'center',alignItems:'center',marginTop:10}}>
+                        <Text style={{color:'#111',fontSize:22,fontFamily:'Roboto',marginTop:16}}>2018 Top Movies</Text>
+                      <Carousel/>
+                    </View>
 
                     <View style={styles.absolute}>
                         <View style={styles.imageline}>
@@ -188,8 +203,11 @@ export default class BackgroundImage extends Component {
                     </View>
 
                     <View style={styles.footer}>
-                        <Text style={{color:'#fff'}}>All Content Copyright @2018 All Rights</Text>
+                        <Text style={{color:'#000'}}>All Content Copyright @2018 All Rights</Text>
                     </View>
+
+                    <Image source={require('../plane.jpg')} style={styles.plane}/>
+
 
                 </ScrollView>
 
@@ -209,23 +227,40 @@ const styles = StyleSheet.create({
     nav: {
         height: 70,
         width: width,
-        backgroundColor: 'grey',
+        backgroundColor: '#333',
         paddingTop: 24,
         paddingLeft: 10,
-        opacity: 0.3
+        opacity: 0.1
+    },
+
+    my:{
+        top: 30,
+        left: width/2.7,
+        position: 'absolute',
+        fontFamily:'course',
+        fontSize:24,
+        color:'#0ff0fA'
     },
 
     logo: {
-        width: 100,
-        height: 45,
-        top: 24,
+        width: 80,
+        height: 35,
+        top: 30,
         left: 10,
+        color:'#000',
         position: 'absolute'
     },
 
     absolute: {
         marginTop: 15,
         justifyContent: 'space-around'
+    },
+
+    arrow:{
+        marginTop:15,
+        fontSize:15,
+        paddingHorizontal:5,
+        color:'#111',
     },
 
     card: {
@@ -246,7 +281,13 @@ const styles = StyleSheet.create({
         opacity: 0.2,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 35,
+        borderRadius: 25,
+    },
+
+    airplane:{
+        width:50,
+        height:30,
+        marginTop:10
     },
 
     text: {
@@ -256,12 +297,19 @@ const styles = StyleSheet.create({
         fontSize: 32
     },
 
+    plane:{
+        position:'absolute',
+        right:4,
+        bottom:5,
+        width:40,
+        height:40
+    },
+
     footer: {
-        backgroundColor: 'grey',
+        backgroundColor: '#fff',
         marginTop:20,
         flex:1,
         flexDirection:'column',
-        opacity: 0.8,
         height: 50,
         justifyContent: 'center',
         alignItems: 'center',
