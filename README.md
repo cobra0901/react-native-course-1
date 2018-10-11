@@ -46,4 +46,5 @@ blur,tab,grid,flatlist,gridview,image,json server,styles
 <img src="https://raw.githubusercontent.com/EugenePizzerbert/react-native-house1/master/screenshots/25.jpg" alt="Demo" width="140" />
 <img src="https://raw.githubusercontent.com/EugenePizzerbert/react-native-house1/master/screenshots/26.jpg" alt="Demo" width="140" />
 <img src="https://raw.githubusercontent.com/EugenePizzerbert/react-native-house1/master/screenshots/test.jpg" alt="Demo" width="140" />
+<img src="https://raw.githubusercontent.com/EugenePizzerbert/react-native-house1/master/screenshots/wallpaper.jpg" alt="Demo" width="140" />
 
